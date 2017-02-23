@@ -4,7 +4,7 @@ Este ejercicio consiste en demostrar las posibilidades de uso del Notebook Jupyt
 
 Para arrancar el servidor se ejecuta "docker run -p 8888:8888 jupyter/all-spark-notebook" que devuelve una url con un token
 
-Se accede desde un navegador con  la url http://<dockerhostip>:8888/?token=<tokenquedevuelveelcomandoanterior>
+Se accede desde un navegador con  la url http://\<dockerhostip\>:8888/?token=\<tokenquedevuelveelcomandoanterior\>
 
 Creamos un Notebook nuevo de R y ejecutamos un codigo de ejemplo,  por ejemplo el que aparece al final de https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
 
@@ -18,4 +18,4 @@ val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).re
 counts.take(5).foreach(println)
 </pre>
 
-Y la cuestion aqui es si estamos usando realmente Spark o no con el ultimo ejercicio.
+Y la cuestion aqui es si estamos usando realmente Spark o no con el ultimo ejercicio. Es decir, se ha hecho un "submit" de un "job" a Spark o no? Lo discutimos el proximo dia.
